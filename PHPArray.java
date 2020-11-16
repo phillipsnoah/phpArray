@@ -91,7 +91,6 @@ public class PHPArray<V> implements Iterable<V>
 		// found an empty entry
 		entries[i] = new Node<V>(key, val);
 		//insert the node into the linked list
-		// TODO: DONE Insert the node into the doubly linked list in O(1) time
 		if (head == null) 
 		{
 			head = tail = entries[i];
@@ -155,7 +154,6 @@ public class PHPArray<V> implements Iterable<V>
 		// delete node from hash table
 		Node<V> toDelete = entries[i];
 		entries[i] = null;
-		// TODO: delete the node from the linked list in O(1)
 		if (N > 2)
 		{
 			if ( toDelete == head ) head = head.next;
